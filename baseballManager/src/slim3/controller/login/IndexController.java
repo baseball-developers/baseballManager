@@ -4,9 +4,9 @@ import org.slim3.controller.Controller;
 import org.slim3.controller.Navigation;
 import org.slim3.datastore.Datastore;
 
-import slim3.Util.Const;
 import slim3.meta.UserInfoMeta;
 import slim3.model.UserInfo;
+import slim3.util.Const;
 
 public class IndexController extends Controller {
 

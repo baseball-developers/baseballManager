@@ -1,4 +1,4 @@
-package slim3.Util;
+package slim3.util;
 
 public class Const {
 

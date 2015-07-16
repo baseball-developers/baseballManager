@@ -12,7 +12,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
-import slim3.Util.Const;
+import slim3.util.Const;
 
 public class AuthFilter implements Filter {
 
