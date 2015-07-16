@@ -1,4 +1,4 @@
-package slim3.controller;
+package slim3.controller.menu;
 
 import org.slim3.controller.Controller;
 import org.slim3.controller.Navigation;
@@ -7,7 +7,6 @@ public class IndexController extends Controller {
 
     @Override
     public Navigation run() throws Exception {
-
-        return redirect("/login");
+        return forward("index.jsp");
     }
 }

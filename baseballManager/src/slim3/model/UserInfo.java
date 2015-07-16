@@ -18,6 +18,13 @@ public class UserInfo implements Serializable {
     @Attribute(version = true)
     private Long version;
 
+    /** ログインID */
+    private String userId;
+
+    /** パスワード */
+    private String password;
+
+
     /**
      * Returns the key.
      *
@@ -84,5 +91,21 @@ public class UserInfo implements Serializable {
             return false;
         }
         return true;
+    }
+
+    public String getUserId() {
+        return userId;
+    }
+
+    public void setUserId(String userId) {
+        this.userId = userId;
+    }
+
+    public String getPassword() {
+        return password;
+    }
+
+    public void setPassword(String password) {
+        this.password = password;
     }
 }

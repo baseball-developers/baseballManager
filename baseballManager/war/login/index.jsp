@@ -9,6 +9,13 @@
 <title>login Index</title>
 </head>
 <body>
-<p>Hello login Index !!!</p>
+<form method="post">
+<p>ログインID</p>
+<input type="text" name="userId"/>
+<p>パスワード</p>
+<input type="password" name="password"/>
+
+<input type="submit" value="ログイン"/>
+</form>
 </body>
 </html>
