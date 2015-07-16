@@ -6,9 +6,9 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<title>menu Index</title>
+<title>top Index</title>
 </head>
 <body>
-<p>Hello menu Index !!!</p>
+<p>Hello top Index !!!</p>
 </body>
 </html>

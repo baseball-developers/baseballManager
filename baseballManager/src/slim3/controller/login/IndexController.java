@@ -1,12 +1,8 @@
 package slim3.controller.login;
 
-import java.util.List;
-
 import org.slim3.controller.Controller;
 import org.slim3.controller.Navigation;
 import org.slim3.datastore.Datastore;
-
-import com.google.appengine.api.datastore.Key;
 
 import slim3.Util.Const;
 import slim3.meta.UserInfoMeta;
@@ -49,6 +45,6 @@ public class IndexController extends Controller {
 
         sessionScope(Const.KEY_USERINFO, userInfo);
 
-        return redirect("/menu");
+        return redirect("/top");
     }
 }

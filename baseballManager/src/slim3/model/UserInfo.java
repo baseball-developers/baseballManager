@@ -2,6 +2,7 @@ package slim3.model;
 
 import java.io.Serializable;
 
+import com.google.appengine.api.datastore.Email;
 import com.google.appengine.api.datastore.Key;
 
 import org.slim3.datastore.Attribute;
@@ -23,6 +24,12 @@ public class UserInfo implements Serializable {
 
     /** パスワード */
     private String password;
+
+    /** 管理者権限の有無 */
+    private boolean isAdmin;
+
+    /** メールアドレス */
+    private Email email;
 
 
     /**
@@ -107,5 +114,21 @@ public class UserInfo implements Serializable {
 
     public void setPassword(String password) {
         this.password = password;
+    }
+
+    public boolean isAdmin() {
+        return isAdmin;
+    }
+
+    public void setAdmin(boolean isAdmin) {
+        this.isAdmin = isAdmin;
+    }
+
+    public Email getEmail() {
+        return email;
+    }
+
+    public void setEmail(Email email) {
+        this.email = email;
     }
 }
