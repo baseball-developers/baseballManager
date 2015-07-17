@@ -120,7 +120,7 @@
 		<filter-class>slim3.filter.AuthFilter</filter-class>
 		<init-param>
 			<param-name>exclude</param-name>
-			<param-value>/index.jsp,/css*,/login*</param-value>
+			<param-value>/index.jsp,/js*,/css*,/login*</param-value>
 		</init-param>
 	</filter>
 	<filter-mapping>
