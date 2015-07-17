@@ -25,11 +25,14 @@ public class UserInfo implements Serializable {
     /** パスワード */
     private String password;
 
-    /** 管理者権限の有無 */
-    private boolean isAdmin;
+    /** 名前 */
+    private String name;
 
     /** メールアドレス */
     private Email email;
+
+    /** 管理者権限の有無 */
+    private boolean isAdmin;
 
 
     /**
@@ -116,12 +119,12 @@ public class UserInfo implements Serializable {
         this.password = password;
     }
 
-    public boolean isAdmin() {
-        return isAdmin;
+    public String getName() {
+        return name;
     }
 
-    public void setAdmin(boolean isAdmin) {
-        this.isAdmin = isAdmin;
+    public void setName(String name) {
+        this.name = name;
     }
 
     public Email getEmail() {
@@ -130,5 +133,13 @@ public class UserInfo implements Serializable {
 
     public void setEmail(Email email) {
         this.email = email;
+    }
+
+    public boolean isAdmin() {
+        return isAdmin;
+    }
+
+    public void setAdmin(boolean isAdmin) {
+        this.isAdmin = isAdmin;
     }
 }
