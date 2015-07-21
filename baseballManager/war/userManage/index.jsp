@@ -1,7 +1,8 @@
 <%@ include file="/header.jsp" %>
+<script type="text/javascript" src="/js/userManage.js"></script>
 <body>
 <form id="form">
-	<input type="hidden" name="key"/>
+	<input type="hidden" name="userId"/>
 	<input type="button" value="新規登録" onclick="move('edit');"/>
 
 	<table border="1">
@@ -23,7 +24,7 @@
 					</c:if>
 				</td>
 				<td>
-					<input type="button" value="編集"/>
+					<input type="button" value="編集" onclick="moveEdit('${user.userId}');"/>
 					<input type="button" value="削除" onclick="removeItem();"/>
 				</td>
 			</tr>

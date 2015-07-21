@@ -118,4 +118,92 @@ public class PersonalProduction implements Serializable {
         }
         return true;
     }
+
+    public int getSingleHit() {
+        return singleHit;
+    }
+
+    public void setSingleHit(int singleHit) {
+        this.singleHit = singleHit;
+    }
+
+    public int getTwoBaseHit() {
+        return twoBaseHit;
+    }
+
+    public void setTwoBaseHit(int twoBaseHit) {
+        this.twoBaseHit = twoBaseHit;
+    }
+
+    public int getThreeBaseHit() {
+        return threeBaseHit;
+    }
+
+    public void setThreeBaseHit(int threeBaseHit) {
+        this.threeBaseHit = threeBaseHit;
+    }
+
+    public int getHomeRun() {
+        return homeRun;
+    }
+
+    public void setHomeRun(int homeRun) {
+        this.homeRun = homeRun;
+    }
+
+    public int getRunBatted() {
+        return runBatted;
+    }
+
+    public void setRunBatted(int runBatted) {
+        this.runBatted = runBatted;
+    }
+
+    public int getPoints() {
+        return points;
+    }
+
+    public void setPoints(int points) {
+        this.points = points;
+    }
+
+    public int getBaseStealing() {
+        return baseStealing;
+    }
+
+    public void setBaseStealing(int baseStealing) {
+        this.baseStealing = baseStealing;
+    }
+
+    public int getFourBalls() {
+        return fourBalls;
+    }
+
+    public void setFourBalls(int fourBalls) {
+        this.fourBalls = fourBalls;
+    }
+
+    public int getDeadBall() {
+        return deadBall;
+    }
+
+    public void setDeadBall(int deadBall) {
+        this.deadBall = deadBall;
+    }
+
+    public int getStrikeout() {
+        return strikeout;
+    }
+
+    public void setStrikeout(int strikeout) {
+        this.strikeout = strikeout;
+    }
+
+    public int getSacrificeHit() {
+        return sacrificeHit;
+    }
+
+    public void setSacrificeHit(int sacrificeHit) {
+        this.sacrificeHit = sacrificeHit;
+    }
 }

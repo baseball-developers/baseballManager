@@ -9,9 +9,8 @@
 <title>userManage Edit</title>
 </head>
 <body>
-<input type="hidden" name="userId"/>
 
-<p>ユーザID:${userId}</p>
+<p>ユーザID:<input type="text" name="userId"/></p>
 <p>パスワード:<input type="password" name="password"/></p>
 <p>名前<input type="text" name="name"/></p>
 <p>メール<input type="text" name="email"/></p>
