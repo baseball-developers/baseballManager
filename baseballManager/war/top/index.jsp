@@ -9,6 +9,6 @@
 <title>top Index</title>
 </head>
 <body>
-<p>Hello top Index !!!</p>
+<p><a href="/userManage">利用者管理画面へ</a></p>
 </body>
 </html>

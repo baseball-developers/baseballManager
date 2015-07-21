@@ -1,13 +1,26 @@
 package slim3.controller;
 
-import org.slim3.controller.Controller;
 import org.slim3.controller.Navigation;
 
-public class IndexController extends Controller {
+public class IndexController extends BaseController {
 
     @Override
-    public Navigation run() throws Exception {
-
+    protected Navigation get() throws Exception {
         return redirect("/login");
+    }
+
+    @Override
+    protected Navigation post() throws Exception {
+        return null;
+    }
+
+    @Override
+    protected Navigation delete() throws Exception {
+        return null;
+    }
+
+    @Override
+    protected Navigation put() throws Exception {
+        return null;
     }
 }

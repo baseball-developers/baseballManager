@@ -1,18 +1,23 @@
 package slim3.controller.login;
 
-import org.slim3.controller.Controller;
 import org.slim3.controller.Navigation;
 import org.slim3.datastore.Datastore;
 
+import slim3.controller.BaseController;
 import slim3.meta.UserInfoMeta;
 import slim3.model.UserInfo;
 import slim3.util.Const;
 
-public class IndexController extends Controller {
+public class IndexController extends BaseController {
+
 
     @Override
-    public Navigation run() throws Exception {
+    protected Navigation get() throws Exception {
+        return forward("index.jsp");
+    }
 
+    @Override
+    protected Navigation post() throws Exception {
         String userId =  this.request.getParameter("userId");
         String password =  this.request.getParameter("password");
 
@@ -46,5 +51,15 @@ public class IndexController extends Controller {
         sessionScope(Const.KEY_USERINFO, userInfo);
 
         return redirect("/top");
+    }
+
+    @Override
+    protected Navigation delete() throws Exception {
+        return null;
+    }
+
+    @Override
+    protected Navigation put() throws Exception {
+        return null;
     }
 }

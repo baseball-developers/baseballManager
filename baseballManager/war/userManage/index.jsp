@@ -1,9 +1,10 @@
-<jsp:include page="/header.jsp"/>
+<%@ include file="/header.jsp" %>
 <body>
 <form id="form">
-	<input type="button" value="新規登録" onclick="post();"/>
+	<input type="hidden" name="key"/>
+	<input type="button" value="新規登録" onclick="move('edit');"/>
 
-	<table>
+	<table border="1">
 		<tr>
 			<th>ログインID</th>
 			<th>パスワード</th>
@@ -16,11 +17,18 @@
 				<td>${user.userId}</td>
 				<td>${user.password}</td>
 				<td>${user.name}</td>
-				<td>${user.admin}</td>
-				<td><input type="button" value="編集"/><input type="button" value="削除"/></td>
+				<td>
+					<c:if test="${user.admin}" >
+						有
+					</c:if>
+				</td>
+				<td>
+					<input type="button" value="編集"/>
+					<input type="button" value="削除" onclick="removeItem();"/>
+				</td>
 			</tr>
 		</c:forEach>
 	</table>
 </form>
 </body>
-<jsp:include page="/footer.jsp"/>
+<%@ include file="/footer.jsp" %>
