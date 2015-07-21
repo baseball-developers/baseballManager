@@ -18,38 +18,53 @@ public class PersonalProduction implements Serializable {
     @Attribute(version = true)
     private Long version;
 
-    /** 単打 */
-    private int singleHit;
+    /** 単打  */
+    private Integer singleHit;
 
-    /** 二塁打 */
-    private int twoBaseHit;
+    /** 二塁打   */
+    private Integer twoBaseHit;
 
-    /** 三塁打 */
-    private int threeBaseHit;
+    /** 三塁打   */
+    private Integer threeBaseHit;
 
-    /** 本塁打 */
-    private int homeRun;
+    /** 本塁打  */
+    private Integer homeRun;
 
-    /** 打点 */
-    private int runBatted;
+    /** 打点  */
+    private Integer runBatted;
 
-    /** 得点 */
-    private int points;
+    /** 得点   */
+    private Integer scoring;
 
-    /** 盗塁 */
-    private int baseStealing;
+    /** 盗塁   */
+    private Integer baseStealing;
 
-    /** 四球 */
-    private int fourBalls;
+    /** 四球   */
+    private Integer fourBalls;
 
-    /** 死球 */
-    private int deadBall;
+    /** 死球  */
+    private Integer deadBall;
 
-    /** 三振 */
-    private int strikeout;
+    /** 三振   */
+    private Integer strikeout;
 
-    /** 犠打 */
-    private int sacrificeHit;
+    /** 犠打    */
+    private Integer bunt;
+
+    /** 犠飛    */
+    private Integer sacrificeFly;
+
+    /** 進塁打    */
+    private Integer productiveOut;
+
+    /** 野選     */
+    private Integer FieldersChoice;
+
+    /** 併殺     */
+    private Integer dublePlay;
+
+    /** 失策  */
+    private Integer blunder;
 
     /**
      * Returns the key.
@@ -59,6 +74,135 @@ public class PersonalProduction implements Serializable {
     public Key getKey() {
         return key;
     }
+
+    public Integer getSingleHit() {
+        return singleHit;
+    }
+
+    public void setSingleHit(Integer singleHit) {
+        this.singleHit = singleHit;
+    }
+
+    public Integer getTwoBaseHit() {
+        return twoBaseHit;
+    }
+
+    public void setTwoBaseHit(Integer twoBaseHit) {
+        this.twoBaseHit = twoBaseHit;
+    }
+
+    public Integer getThreeBaseHit() {
+        return threeBaseHit;
+    }
+
+    public void setThreeBaseHit(Integer threeBaseHit) {
+        this.threeBaseHit = threeBaseHit;
+    }
+
+    public Integer getHomeRun() {
+        return homeRun;
+    }
+
+    public void setHomeRun(Integer homeRun) {
+        this.homeRun = homeRun;
+    }
+
+    public Integer getRunBatted() {
+        return runBatted;
+    }
+
+    public void setRunBatted(Integer runBatted) {
+        this.runBatted = runBatted;
+    }
+
+    public Integer getScoring() {
+        return scoring;
+    }
+
+    public void setScoring(Integer scoring) {
+        this.scoring = scoring;
+    }
+
+    public Integer getBaseStealing() {
+        return baseStealing;
+    }
+
+    public void setBaseStealing(Integer baseStealing) {
+        this.baseStealing = baseStealing;
+    }
+
+    public Integer getFourBalls() {
+        return fourBalls;
+    }
+
+    public void setFourBalls(Integer fourBalls) {
+        this.fourBalls = fourBalls;
+    }
+
+    public Integer getDeadBall() {
+        return deadBall;
+    }
+
+    public void setDeadBall(Integer deadBall) {
+        this.deadBall = deadBall;
+    }
+
+    public Integer getStrikeout() {
+        return strikeout;
+    }
+
+    public void setStrikeout(Integer strikeout) {
+        this.strikeout = strikeout;
+    }
+
+    public Integer getBunt() {
+        return bunt;
+    }
+
+    public void setBunt(Integer bunt) {
+        this.bunt = bunt;
+    }
+
+    public Integer getSacrificeFly() {
+        return sacrificeFly;
+    }
+
+    public void setSacrificeFly(Integer sacrificeFly) {
+        this.sacrificeFly = sacrificeFly;
+    }
+
+    public Integer getProductiveOut() {
+        return productiveOut;
+    }
+
+    public void setProductiveOut(Integer productiveOut) {
+        this.productiveOut = productiveOut;
+    }
+
+    public Integer getFieldersChoice() {
+        return FieldersChoice;
+    }
+
+    public void setFieldersChoice(Integer fieldersChoice) {
+        FieldersChoice = fieldersChoice;
+    }
+
+    public Integer getDublePlay() {
+        return dublePlay;
+    }
+
+    public void setDublePlay(Integer dublePlay) {
+        this.dublePlay = dublePlay;
+    }
+
+    public Integer getBlunder() {
+        return blunder;
+    }
+
+    public void setBlunder(Integer blunder) {
+        this.blunder = blunder;
+    }
+
 
     /**
      * Sets the key.
