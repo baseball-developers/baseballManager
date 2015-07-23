@@ -15,6 +15,7 @@ function registItem() {
 }
 
 function saveItem() {
+	alert($('#form').attr('method'));
 	$('#form').attr('method', 'put');
 	$('#form').submit();
 }
