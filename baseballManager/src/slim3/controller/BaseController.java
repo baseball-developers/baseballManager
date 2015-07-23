@@ -23,6 +23,6 @@ public abstract class BaseController extends Controller{
 
     protected abstract Navigation get() throws Exception;
     protected abstract Navigation post() throws Exception;
-    protected abstract Navigation delete() throws Exception;
     protected abstract Navigation put() throws Exception;
+    protected abstract Navigation delete() throws Exception;
 }
