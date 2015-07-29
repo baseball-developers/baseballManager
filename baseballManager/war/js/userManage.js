@@ -6,6 +6,6 @@ function moveRegist() {
 
 /** 編集画面へ遷移 */
 function moveEdit(userId) {
-	$('[name="userId"]').val(userId);
+	$('[name="selectUserId"]').val(userId);
 	move('edit');
 }

@@ -6,6 +6,7 @@ import com.google.appengine.api.datastore.Email;
 import com.google.appengine.api.datastore.Key;
 
 import org.slim3.datastore.Attribute;
+import org.slim3.datastore.Datastore;
 import org.slim3.datastore.Model;
 
 @Model(schemaVersion = 1)
@@ -42,6 +43,10 @@ public class UserInfo implements Serializable {
      */
     public Key getKey() {
         return key;
+    }
+
+    public String getStrKey() {
+        return Datastore.keyToString(key);
     }
 
     /**

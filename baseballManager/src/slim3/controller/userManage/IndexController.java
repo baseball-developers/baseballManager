@@ -18,7 +18,6 @@ public class IndexController extends BaseController {
         List<UserInfo> userList = Datastore.query(e).asList();
         requestScope("userList", userList);
 
-
         return forward("index.jsp");
     }
 

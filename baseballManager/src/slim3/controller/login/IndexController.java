@@ -1,7 +1,11 @@
 package slim3.controller.login;
 
+import java.util.List;
+
 import org.slim3.controller.Navigation;
 import org.slim3.datastore.Datastore;
+
+import com.google.appengine.api.datastore.Key;
 
 import slim3.controller.BaseController;
 import slim3.meta.UserInfoMeta;
@@ -27,7 +31,7 @@ public class IndexController extends BaseController {
 
         UserInfoMeta e2 = UserInfoMeta.get();
         UserInfo userInfo2 = Datastore.query(e2)
-            .filter(e2.userId.equal("saito"), e2.password.equal("takuya"))
+            .filter(e2.userId.equal("saito"))
             .asSingle();
 
         if(userInfo2 == null) {
